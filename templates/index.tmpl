@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      div {
+        padding: 10px;
+      }
+      div p {
+        margin: 2px 0;
+      }
+      h2 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Books CRUD with golang, gorm and gin
+    </h1>
+    <h2>
+      Predefined books
+    </h2>
+    {{range .books}}
+        <div>
+          <p>ID: {{.ID}}</p>
+          <p>Name: {{.Name}}</p>
+          <p>Description: {{.Description}}</p>
+          <p>Author name: {{.AuthorName}}</p>
+          <p>Editorial: {{.Editorial}}</p>
+          <p>Date: {{.Date}}</p>
+        </div>
+    {{end}}
+    <h2>
+      Predefined authors
+    </h2>
+    {{range .authors}}
+        <div>
+          <p>ID: {{.ID}}</p>
+          <p>Name: {{.Name}}</p>
+        </div>
+    {{end}}
+  </body>
+</html>
