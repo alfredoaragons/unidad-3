@@ -12,9 +12,9 @@
 
 ### Open your browser on localhost:8080
 ### URI's
-GET    /
-GET    /books
-GET    /books/:id
-POST   /books (form-data)
-DELETE /books/:id
-PUT    /books/:id
+- GET    /
+- GET    /books
+- GET    /books/:id
+- POST   /books (form-data)
+- DELETE /books/:id
+- PUT    /books/:id
